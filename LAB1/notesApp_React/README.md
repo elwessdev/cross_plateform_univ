@@ -1,7 +1,5 @@
 readme.md# wessNotes
 
-![Notes App Home Screen](assets/image1.png)
-*Home screen of the Notes App*
+![](assets/image1.png)
 
-![Add Note Screen](assets/image.png)
-*Creating a new note*
+![](assets/image.png)
