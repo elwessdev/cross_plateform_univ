@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import "Home.dart";
-import "Login.dart";
-import "Landing.dart";
+import 'screens/home_screen.dart';
+import 'screens/notes_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,15 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'wessQuizy',
-      debugShowCheckedModeBanner: false,
+      title: 'wessNotes',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(
-        body: LoginPage(),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/notes': (context) => NotesScreen(),
+      },
     );
   }
 }
-
